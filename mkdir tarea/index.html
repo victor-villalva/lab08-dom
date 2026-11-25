@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Mantenimiento</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 640px;
+      margin: 30px auto;
+    }
+
+    section {
+      border: 1px solid #ccc;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    input, select, button {
+      padding: 8px;
+      margin: 5px 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Registro de Mantenimiento de Vehículos</h1>
+
+  <section>
+    <h2>Registrar mantenimiento</h2>
+
+    <form id="formulario">
+      <input id="placa" type="text" placeholder="Placa del vehículo" required>
+      <input id="kilometraje" type="number" placeholder="Kilometraje" required>
+
+      <select id="tipo">
+        <option value="Preventivo">Preventivo</option>
+        <option value="Correctivo">Correctivo</option>
+      </select>
+
+      <button type="submit">Registrar</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Mantenimientos registrados</h2>
+    <ul id="lista"></ul>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
